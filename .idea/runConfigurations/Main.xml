@@ -2,7 +2,7 @@
   <configuration default="false" name="Main" type="JetRunConfigurationType">
     <option name="MAIN_CLASS_NAME" value="MainKt" />
     <module name="Advent-of-code-2023" />
-    <option name="PROGRAM_PARAMETERS" value="2 all true" />
+    <option name="PROGRAM_PARAMETERS" value="3 all true" />
     <shortenClasspath name="NONE" />
     <method v="2">
       <option name="Make" enabled="true" />
