@@ -1,6 +1,6 @@
 import kotlin.system.exitProcess
 
-private const val dayCount = 1
+private const val dayCount = 2
 var verbose: Boolean = false
 var output: Boolean = false
 
@@ -31,6 +31,6 @@ fun usage(paramName: String?, paramValue: String?): Nothing {
 
 fun runDay(num: Int, part: String) {
     val day = {}.javaClass.classLoader.loadClass("aoc.Day${num}").getDeclaredConstructor().newInstance() as Day
-    if (part == "all") for (what in listOf("example1", "example2", "1", "2")) day.run(what)
+    if (part == "all") for (what in listOf("example1", "1", "example2", "2")) day.run(what)
     else day.run(part)
 }
