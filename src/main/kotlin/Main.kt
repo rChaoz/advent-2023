@@ -1,6 +1,6 @@
 import kotlin.system.exitProcess
 
-private const val dayCount = 3
+private const val dayCount = 4
 var verbose: Boolean = false
 var output: Boolean = false
 
