@@ -14,34 +14,6 @@ class Day5 : Day() {
         }
     }
 
-    private val regex = run {
-        val mapPattern = """((?:\d+ \d+ \d+\n)+)"""
-        Regex("""
-            seeds: ([^\d ]+)
-            
-            seed-to-soil map:
-            $mapPattern
-            
-            soil-to-fertilizer map:
-            $mapPattern
-            
-            fertilizer-to-water map:
-            $mapPattern
-            
-            water-to-light map:
-            $mapPattern
-
-            light-to-temperature map:
-            $mapPattern
-
-            temperature-to-humidity map:
-            $mapPattern
-
-            humidity-to-location map:
-            $mapPattern
-        """.trimIndent())
-    }
-
     private fun parse(lines: List<String>) = lines[0].removePrefix("seeds: ").split(' ').map(String::toLong) to buildList {
         var i = 3
         while (i < lines.size) add(buildList {
