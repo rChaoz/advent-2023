@@ -2,7 +2,6 @@ package aoc
 
 import Day
 import java.io.PrintStream
-import java.lang.RuntimeException
 import kotlin.math.max
 
 class Day2 : Day() {

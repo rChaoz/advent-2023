@@ -7,7 +7,7 @@ import kotlin.math.abs
 
 class Day11 : Day() {
     private fun parse(lines: List<String>) = buildList {
-        lines.forEachIndexed { i, line -> line.forEachIndexed { j, c -> if (c == '#') add(i to j) }}
+        lines.forEachIndexed { i, line -> line.forEachIndexed { j, c -> if (c == '#') add(i to j) } }
     }
 
     private fun expandUniverse(galaxies: List<Point>, expansion: Long): List<Pair<Long, Long>> {

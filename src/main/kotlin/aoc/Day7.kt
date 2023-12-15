@@ -2,7 +2,6 @@ package aoc
 
 import Day
 import java.io.PrintStream
-import java.lang.RuntimeException
 import kotlin.math.min
 
 private val cardToValue = (2..9).associateBy(Int::digitToChar) + mapOf(
@@ -33,10 +32,12 @@ class Day7 : Day() {
                     if (cardGroups.values.max() == 4) 6 // four of a kind
                     else 5 // full house
                 }
+
                 3 -> {
                     if (cardGroups.values.max() == 3) 4 // three of a kind
                     else 3 // 2 pairs
                 }
+
                 4 -> 2 // 1 pair
                 else -> 1 // high card
             }

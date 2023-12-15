@@ -2,7 +2,6 @@ package aoc
 
 import Day
 import java.io.PrintStream
-import java.util.concurrent.atomic.AtomicLong
 
 class Day12 : Day() {
     private fun parse(lines: List<String>) = lines.map { line ->
