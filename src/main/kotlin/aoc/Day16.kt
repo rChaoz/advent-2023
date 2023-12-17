@@ -4,7 +4,7 @@ import Day
 import java.io.PrintStream
 
 class Day16 : Day() {
-    // refelction1 for /, reflection2 for \
+    // reflection1 for /, reflection2 for \
     private enum class Direction(val dx: Int, val dy: Int, reflection1: Int, reflection2: Int) {
         Up(-1, 0, 1, 3),
         Right(0, 1, 0, 2),
