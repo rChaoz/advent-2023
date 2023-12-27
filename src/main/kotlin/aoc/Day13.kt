@@ -1,20 +1,10 @@
 package aoc
 
 import Day
+import split
 import java.io.PrintStream
 
 class Day13 : Day() {
-    private inline fun <T> List<T>.split(predicate: (T) -> Boolean) = buildList<List<T>> {
-        var list = mutableListOf<T>()
-        for (item in this@split) {
-            if (predicate(item)) {
-                add(list)
-                list = mutableListOf()
-            } else list.add(item)
-        }
-        add(list)
-    }
-
     private fun parse(lines: List<String>) = lines.split(String::isEmpty)
 
     private fun List<String>.rotate() = List(this[0].length) { col ->
